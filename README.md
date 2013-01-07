@@ -18,7 +18,7 @@ Not needed.
 
 Download
 ========
-For download see https://github.com/znuny/Znuny4OTRS-EnableFAQRichText/downloads/
+For download see http://znuny.com/d/
 
 Commercial Support
 ==================
