@@ -4,16 +4,18 @@
     <Version>1.0.1</Version>
     <Framework>3.0.x</Framework>
     <Framework>3.1.x</Framework>
+    <Framework>3.2.x</Framework>
+    <PackageRequired Version="1.0.0">Znuny4OTRS-Repo</PackageRequired>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
-    <Description Lang="en">This extention enables rich text for FAQ also if rich text is disabled via SysConfig.</Description>
+    <Description Lang="en">This extention enables rich text for FAQ even if rich text is disabled via SysConfig.</Description>
     <Description Lang="de">Diese Erweiterung aktiviert RichText für die FAQ, auch wenn RichText über SysConfig deaktiviert wurde.</Description>
     <Filelist>
         <File Permission="644" Location="Kernel/Config/Files/Znuny4OTRS-EnableFAQRichText.xml"/>
         <File Permission="644" Location="Kernel/Modules/AgentFAQRichTextEnable.pm"/>
     </Filelist>
-    <IntroInstall Type="pre" Title="Installations-Information" Lang="de"><![CDATA[
+    <IntroInstall Type="pre" Title="Pre-Install Information" Lang="en"><![CDATA[
         <br/>
         <br/>
         Welcome to <u>Znuny4OTRS-EnableFAQRichText</u>!
@@ -21,7 +23,7 @@
         <br/>
 
         <p>
-This extention enables rich text for FAQ also if rich text is disabled via SysConfig.
+This extention enables rich text for FAQ even if rich text is disabled via SysConfig.
         </p>
         <br/>
         <br/>
@@ -33,7 +35,7 @@ This extention enables rich text for FAQ also if rich text is disabled via SysCo
         <br/>
         <br/>
     ]]></IntroInstall>
-    <IntroInstall Type="pre" Title="Pre-Install Information" Lang="en"><![CDATA[
+    <IntroInstall Type="pre" Title="Installation Information" Lang="de"><![CDATA[
         <br/>
         <br/>
         Herzlich Willkommen zu <u>Znuny4OTRS-EnableFAQRichText</u>!
