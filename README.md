@@ -1,31 +1,38 @@
+![Znuny logo](http://znuny.com/assets/logo_small.png)
+
 Znuny4OTRS - EnableFAQRichText
 ==============================
+This package enables richtext for FAQ, eve if richtext is disabled in OTRS.
 
-Feature List
-============
-This package enables richtext for FAQ, also if richtext is disable in OTRS.
 
-Installation
-============
+**Installation**
+
 Download the package and install it via admin interface -> package manager.
 
-Prerequisites
-* OTRS 3.1
 
-Configuration
-=============
+**Prerequisites**
+
+- OTRS 3.0
+
+- OTRS 3.1
+
+- OTRS 3.2
+
+**Configuration**
+
 Not needed.
 
-Download
-========
-For download see http://znuny.com/d/
+**Download**
 
-Commercial Support
-==================
-For this extension and for OTRS in general visit http://znuny.com. Looking forward to hear from you!
+For download see [http://znuny.com/d/](http://znuny.com/d/)
+
+**Commercial Support**
+
+For this extension and for OTRS in general visit [http://znuny.com](http://znuny.com). Looking forward to hear from you!
 
 Enjoy!
 
  Your Znuny Team!
- http://znuny.com
+
+ [http://znuny.com](http://znuny.com)
 
