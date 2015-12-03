@@ -17,7 +17,6 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    $Self->{Translation}->{'This configuration registers a PreApplication module that.'} = '';
     $Self->{Translation}->{"This module enables rich text for FAQ also if rich text is disabled via SysConfig."} = "Mit Hilfe dieses Moduls aktiviert man RichText in der FAQ auch wenn RichText im System deaktiviert ist.";
 
     return 1;
