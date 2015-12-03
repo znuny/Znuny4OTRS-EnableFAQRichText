@@ -1,5 +1,4 @@
 # --
-# Kernel/Modules/AgentFAQRichTextEnable.pm - This module enables rich text for FAQ also if rich text is disabled via SysConfig.
 # Copyright (C) 2012-2015 Znuny GmbH, http://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
