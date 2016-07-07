@@ -7,20 +7,22 @@ This package enables richtext for FAQ even if richtext is disabled in OTRS.
 
 **Installation**
 
-Download the package and install it via admin interface -> package manager.
+Download the package and install it via admin interface -> package manager or use Znuny4OTRS-Repo.
 
 
 **Prerequisites**
 
-- OTRS 5.0
+- Znuny4OTRS-Repo
+
+- OTRS 5
 
 **Configuration**
 
-Not needed.
+Enabling and disabling the FAQs richtext is possible via SysConfig.
 
 **Download**
 
-For download see [http://znuny.com/d/](http://znuny.com/d/)
+For download see [http://znuny.com/en/#!/addons](http://znuny.com/en/#!/addons)
 
 **Commercial Support**
 
