@@ -21,7 +21,6 @@
         Welcome to <u>Znuny4OTRS-EnableFAQRichText</u>!
         <br/>
         <br/>
-
         <p>
 This extention enables rich text for FAQ even if rich text is disabled via SysConfig.
         </p>
