@@ -3,7 +3,7 @@
     <Name>Znuny4OTRS-EnableFAQRichText</Name>
     <Version>1.2.0</Version>
     <ChangeLog Version="1.2.0" Date="2015-12-03 11:00:40 UTC">Ported to OTRS 5.0.</ChangeLog>
-    <Framework>5.0.x</Framework>
+    <Framework>6.0.x</Framework>
     <PackageRequired Version="3.0.0">Znuny4OTRS-Repo</PackageRequired>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
@@ -11,9 +11,9 @@
     <Description Lang="en">This extention enables rich text for FAQ even if rich text is disabled via SysConfig.</Description>
     <Description Lang="de">Diese Erweiterung aktiviert RichText für die FAQ, auch wenn RichText über SysConfig deaktiviert wurde.</Description>
     <Filelist>
-        <File Permission="644" Location="Kernel/Config/Files/Znuny4OTRSEnableFAQRichText.xml"/>
-        <File Permission="644" Location="Kernel/Language/de_Znuny4OTRSEnableFAQRichText.pm"/>
-        <File Permission="644" Location="Kernel/Modules/AgentFAQRichTextEnable.pm"/>
+        <File Permission="660" Location="Kernel/Config/Files/XML/Znuny4OTRSEnableFAQRichText.xml"/>
+        <File Permission="660" Location="Kernel/Language/de_Znuny4OTRSEnableFAQRichText.pm"/>
+        <File Permission="660" Location="Kernel/Modules/AgentFAQRichTextEnable.pm"/>
     </Filelist>
     <IntroInstall Type="pre" Title="Pre-Install Information" Lang="en"><![CDATA[
         <br/>
