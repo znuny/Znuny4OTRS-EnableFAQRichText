@@ -15,6 +15,7 @@
     <Description Lang="en">This extention enables rich text for FAQ even if rich text is disabled via SysConfig.</Description>
     <Description Lang="de">Diese Erweiterung aktiviert RichText für die FAQ, auch wenn RichText über SysConfig deaktiviert wurde.</Description>
     <Filelist>
+        <File Permission="660" Location="Kernel/Autoload/Znuny4OTRSEnableFAQRichText.pm"/>
         <File Permission="660" Location="Kernel/Config/Files/XML/Znuny4OTRSEnableFAQRichText.xml"/>
         <File Permission="660" Location="Kernel/Language/de_Znuny4OTRSEnableFAQRichText.pm"/>
         <File Permission="660" Location="Kernel/Modules/PreApplicationZnuny4OTRSEnableFAQRichText.pm"/>

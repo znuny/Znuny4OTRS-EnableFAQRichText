@@ -46,7 +46,7 @@ my $SeleniumTest = sub {
         Message => 'Agent Interface RichText CKEditor initialized'
     );
 
-    # Check CustomerInterface
+    # Prepare requirements for Customer and Public Interface
 
     my $RandomID    = $HelperObject->GetRandomID();
     my $HTMLContent = "<b>Some <i>FAQ</i> text about $RandomID</b>";
@@ -55,7 +55,7 @@ my $SeleniumTest = sub {
     my $ItemID = $FAQObject->FAQAdd(
         Title       => $Title,
         CategoryID  => 1,
-        StateID     => 1,
+        StateID     => 3,
         LanguageID  => 1,
         Keywords    => 'None',
         Field1      => $HTMLContent,
@@ -67,17 +67,31 @@ my $SeleniumTest = sub {
         ContentType => 'text/html',
     );
 
+    # Check PublicInterface
+
+    $SeleniumObject->PublicInterface(
+        Action      => 'PublicFAQZoom',
+        ItemID      => $ItemID,
+        WaitForAJAX => 0,
+    );
+
+    # Selenium won't switch to a frame if it's not loaded yet
+    sleep 3;
+    $SeleniumObject->switch_to_frame('IframeFAQField1');
+
+    # the HTML markup would be stripped out if RichText is disabled
+    $SeleniumObject->PageContains(
+        String  => $HTMLContent,
+        Message => 'Public Interface RichText HTML present'
+    );
+
+    # Check CustomerInterface
+
     $SeleniumObject->CustomerUserLogin();
 
     $SeleniumObject->CustomerRequest(
         Action => 'CustomerFAQZoom',
         ItemID => $ItemID,
-    );
-
-    # verify FAQ is created
-    $SeleniumObject->PageContains(
-        String  => $Title,
-        Message => 'FAQ Title found'
     );
 
     # Selenium won't switch to a frame if it's not loaded yet
@@ -88,7 +102,7 @@ my $SeleniumTest = sub {
     # the HTML markup would be stripped out if RichText is disabled
     $SeleniumObject->PageContains(
         String  => $HTMLContent,
-        Message => 'Customer Interface RichText CKEditor initialized'
+        Message => 'Customer Interface RichText HTML present'
     );
 };
 

@@ -14,4 +14,13 @@
             <Item ValueType="PerlModule" ValueFilter="Kernel/Modules/*.pm">Kernel::Modules::PreApplicationZnuny4OTRSEnableFAQRichText</Item>
         </Value>
     </Setting>
+    <Setting Name="AutoloadPerlPackages###100-Znuny4OTRSEnableFAQRichText" Required="1" Valid="1">
+        <Description Translatable="1">Autoloading of Znuny4OTRSEnableFAQRichText extensions.</Description>
+        <Navigation>Core::Autoload</Navigation>
+        <Value>
+            <Array>
+                <Item ValueType="String">Kernel::Autoload::Znuny4OTRSEnableFAQRichText</Item>
+            </Array>
+        </Value>
+    </Setting>
 </otrs_config>
