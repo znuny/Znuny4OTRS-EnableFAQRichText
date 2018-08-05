@@ -1,11 +1,22 @@
 image: registry.znuny.com/znuny/docker-otrs6ci:latest
 
 services:
+  - name: docker.io/elgalu/selenium:latest
   - name: registry.znuny.com/znuny/docker-mysql-utf8:latest
     alias: mysql
 
 stages:
+  - test
   - deploy
+
+job_unit_otrs_Znuny4OTRSEnableFAQRichText:
+  stage: test
+  script:
+    - env
+    - pwd
+    - /run.sh
+    - su -c "perl /opt/otrs/bin/otrs.Console.pl Znuny4OTRS::AdvancedPackageManager::InstallSOPM /opt/otrs/Znuny4OTRS-EnableFAQRichText.sopm" -s /bin/bash otrs
+    - su -c "perl /opt/otrs/bin/otrs.Console.pl Dev::UnitTest::Run --verbose --test Znuny4OTRSEnableFAQRichText/Selenium/Znuny4OTRSEnableFAQRichText" -s /bin/bash otrs
 
 job_deploy_otrs_Znuny4OTRSEnableFAQRichText:
   stage: deploy

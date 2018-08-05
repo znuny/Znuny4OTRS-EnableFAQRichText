@@ -1,5 +1,5 @@
 # --
-# Copyright (C) 2012-2017 Znuny GmbH, http://znuny.com/
+# Copyright (C) 2012-2018 Znuny GmbH, http://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -16,7 +16,7 @@ use utf8;
 sub Data {
     my $Self = shift;
 
-    $Self->{Translation}->{"This module enables rich text for FAQ also if rich text is disabled via SysConfig."} = "Mit Hilfe dieses Moduls aktiviert man RichText in der FAQ auch wenn RichText im System deaktiviert ist.";
+    $Self->{Translation}->{"Registers a PreApplication module that re-enables FAQ RichText even if disabled via SysConfig."} = "Registriert ein PreApplication-Modu, dass die RichText-Funktion der FAQ aktiviert, auch wenn diese im System global deaktiviert wurde.";
 
     return 1;
 }
