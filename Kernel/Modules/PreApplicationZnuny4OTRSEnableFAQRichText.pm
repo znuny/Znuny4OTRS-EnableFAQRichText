@@ -1,12 +1,12 @@
 # --
-# Copyright (C) 2012-2017 Znuny GmbH, http://znuny.com/
+# Copyright (C) 2012-2018 Znuny GmbH, http://znuny.com/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
-package Kernel::Modules::AgentFAQRichTextEnable;
+package Kernel::Modules::PreApplicationZnuny4OTRSEnableFAQRichText;
 
 use strict;
 use warnings;
@@ -16,10 +16,11 @@ our @ObjectDependencies = (
     'Kernel::Output::HTML::Layout',
 );
 
+use Kernel::System::VariableCheck qw(:all);
+
 sub new {
     my ( $Type, %Param ) = @_;
 
-    # allocate new hash for object
     my $Self = {%Param};
     bless( $Self, $Type );
 
@@ -32,7 +33,7 @@ sub PreRun {
     my $ConfigObject = $Kernel::OM->Get('Kernel::Config');
     my $LayoutObject = $Kernel::OM->Get('Kernel::Output::HTML::Layout');
 
-    return '' if $Self->{Action} !~ /FAQ/;
+    return if $Self->{Action} !~ /FAQ/;
 
     $ConfigObject->Set(
         Key   => 'Frontend::RichText',
@@ -40,7 +41,8 @@ sub PreRun {
     );
     $LayoutObject->{BrowserRichText} = 1;
 
-    return '';
+    return;
+
 }
 
 1;
