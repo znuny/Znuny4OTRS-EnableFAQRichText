@@ -79,6 +79,8 @@ my $SeleniumTest = sub {
     sleep 3;
     $SeleniumObject->switch_to_frame('IframeFAQField1');
 
+    print $Self->get_page_source();
+
     # the HTML markup would be stripped out if RichText is disabled
     $SeleniumObject->PageContains(
         String  => $HTMLContent,
@@ -96,7 +98,6 @@ my $SeleniumTest = sub {
 
     # Selenium won't switch to a frame if it's not loaded yet
     sleep 3;
-
     $SeleniumObject->switch_to_frame('IframeFAQField1');
 
     # the HTML markup would be stripped out if RichText is disabled
