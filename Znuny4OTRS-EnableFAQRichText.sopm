@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny4OTRS-EnableFAQRichText</Name>
-    <Version>6.0.2</Version>
+    <Version>6.0.3</Version>
+    <ChangeLog Version="6.0.3" Date="2018-08-05 12:40:58 +0200">Added Customer Interface compatibility.</ChangeLog>
     <ChangeLog Version="6.0.2" Date="2017-12-14 10:33:11 +0100">Added note about SysConfig option.</ChangeLog>
     <ChangeLog Version="6.0.1" Date="2017-11-14 14:05:38 +0100">Initial release 6.0.x.</ChangeLog>
     <ChangeLog Version="1.2.0" Date="2015-12-03 11:00:40 UTC">Ported to OTRS 5.0.</ChangeLog>
