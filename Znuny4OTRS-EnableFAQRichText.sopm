@@ -19,7 +19,9 @@
         <File Permission="660" Location="Kernel/Config/Files/XML/Znuny4OTRSEnableFAQRichText.xml"/>
         <File Permission="660" Location="Kernel/Language/de_Znuny4OTRSEnableFAQRichText.pm"/>
         <File Permission="660" Location="Kernel/Modules/PreApplicationZnuny4OTRSEnableFAQRichText.pm"/>
-        <File Permission="660" Location="scripts/test/Znuny4OTRSEnableFAQRichText/Selenium/Znuny4OTRSEnableFAQRichText.t"/>
+        <File Permission="660" Location="scripts/test/Znuny4OTRSEnableFAQRichText/Selenium/Agent.t"/>
+        <File Permission="660" Location="scripts/test/Znuny4OTRSEnableFAQRichText/Selenium/Customer.t"/>
+        <File Permission="660" Location="scripts/test/Znuny4OTRSEnableFAQRichText/Selenium/Public.t"/>
     </Filelist>
     <IntroInstall Type="pre" Title="Pre-Install Information" Lang="en"><![CDATA[
         <br/>

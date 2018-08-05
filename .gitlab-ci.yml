@@ -16,7 +16,9 @@ job_unit_otrs_Znuny4OTRSEnableFAQRichText:
     - pwd
     - /run.sh
     - su -c "perl /opt/otrs/bin/otrs.Console.pl Znuny4OTRS::AdvancedPackageManager::InstallSOPM /opt/otrs/Znuny4OTRS-EnableFAQRichText.sopm" -s /bin/bash otrs
-    - su -c "perl /opt/otrs/bin/otrs.Console.pl Dev::UnitTest::Run --verbose --test Znuny4OTRSEnableFAQRichText/Selenium/Znuny4OTRSEnableFAQRichText" -s /bin/bash otrs
+    - su -c "perl /opt/otrs/bin/otrs.Console.pl Dev::UnitTest::Run --verbose --test Znuny4OTRSEnableFAQRichText/Selenium/Agent" -s /bin/bash otrs
+    - su -c "perl /opt/otrs/bin/otrs.Console.pl Dev::UnitTest::Run --verbose --test Znuny4OTRSEnableFAQRichText/Selenium/Customer" -s /bin/bash otrs
+    - su -c "perl /opt/otrs/bin/otrs.Console.pl Dev::UnitTest::Run --verbose --test Znuny4OTRSEnableFAQRichText/Selenium/Public" -s /bin/bash otrs
 
 job_deploy_otrs_Znuny4OTRSEnableFAQRichText:
   stage: deploy
