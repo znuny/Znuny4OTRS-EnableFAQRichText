@@ -31,22 +31,7 @@ my $SeleniumTest = sub {
         Valid => 1,
     );
 
-    # Check AgentInterface
-
-    my %TestUser = $SeleniumObject->AgentLogin(
-        Groups => [ 'admin', 'users' ],
-    );
-
-    $SeleniumObject->AgentRequest(
-        Action => 'AgentFAQAdd',
-    );
-
-    $SeleniumObject->PageContains(
-        String  => 'HasCKEInstance',
-        Message => 'Agent Interface RichText CKEditor initialized'
-    );
-
-    # Prepare requirements for Customer and Public Interface
+    # Prepare requirements
 
     my $RandomID    = $HelperObject->GetRandomID();
     my $HTMLContent = "<b>Some <i>FAQ</i> text about $RandomID</b>";
@@ -83,25 +68,6 @@ my $SeleniumTest = sub {
     $SeleniumObject->PageContains(
         String  => $HTMLContent,
         Message => 'Public Interface RichText HTML present'
-    );
-
-    # Check CustomerInterface
-
-    $SeleniumObject->CustomerUserLogin();
-
-    $SeleniumObject->CustomerRequest(
-        Action => 'CustomerFAQZoom',
-        ItemID => $ItemID,
-    );
-
-    # Selenium won't switch to a frame if it's not loaded yet
-    sleep 5;
-    $SeleniumObject->switch_to_frame('IframeFAQField1');
-
-    # the HTML markup would be stripped out if RichText is disabled
-    $SeleniumObject->PageContains(
-        String  => $HTMLContent,
-        Message => 'Customer Interface RichText HTML present'
     );
 };
 
