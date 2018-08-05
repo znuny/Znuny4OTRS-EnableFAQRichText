@@ -79,7 +79,7 @@ my $SeleniumTest = sub {
     sleep 3;
     $SeleniumObject->switch_to_frame('IframeFAQField1');
 
-    print $Self->get_page_source();
+    print $SeleniumObject->get_page_source();
 
     # the HTML markup would be stripped out if RichText is disabled
     $SeleniumObject->PageContains(
