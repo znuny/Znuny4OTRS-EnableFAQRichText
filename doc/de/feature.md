@@ -1,4 +1,4 @@
-# Znuny4OTRS - EnableFAQRichText
+# Funktionalität
 
 Dieses Paket aktiviert den Richtext-Editor für FAQ-Einträge im Agenten und Kunden Interface, auch wenn Richtext in OTRS via SysConfig deaktiviert ist.
 

@@ -1,4 +1,4 @@
-# Znuny4OTRS - EnableFAQRichText
+# Functionality
 
 This package enables richtext for FAQ in the Agent and Customer Interface even if richtext is disabled in OTRS.
 
