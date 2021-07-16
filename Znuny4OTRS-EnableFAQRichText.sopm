@@ -8,8 +8,8 @@
     <ChangeLog Version="6.0.1" Date="2017-11-14 14:05:38 +0100">Initial release 6.0.x.</ChangeLog>
     <ChangeLog Version="1.2.0" Date="2015-12-03 11:00:40 UTC">Ported to OTRS 5.0.</ChangeLog>
     <Framework>6.0.x</Framework>
-    <PackageRequired Version="6.0.57">Znuny4OTRS-Repo</PackageRequired>
-    <PackageRequired Version="6.0.1">FAQ</PackageRequired>
+    <PackageRequired Version="6.0.76">Znuny4OTRS-Repo</PackageRequired>
+    <PackageRequired Version="6.0.29">FAQ</PackageRequired>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
