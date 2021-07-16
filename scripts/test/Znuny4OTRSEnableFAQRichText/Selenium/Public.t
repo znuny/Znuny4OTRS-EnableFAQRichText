@@ -32,7 +32,6 @@ my $SeleniumTest = sub {
     );
 
     # Prepare requirements
-
     my $RandomID    = $HelperObject->GetRandomID();
     my $HTMLContent = "<b>Some <i>FAQ</i> text about $RandomID</b>";
 
@@ -53,7 +52,6 @@ my $SeleniumTest = sub {
     );
 
     # Check PublicInterface
-
     $SeleniumObject->PublicInterface(
         Action      => 'PublicFAQZoom',
         ItemID      => $ItemID,
@@ -62,7 +60,9 @@ my $SeleniumTest = sub {
 
     # Selenium won't switch to a frame if it's not loaded yet
     sleep 5;
-    $SeleniumObject->switch_to_frame('IframeFAQField1');
+    $SeleniumObject->SwitchToFrame(
+        FrameSelector => '#IframeFAQField1',
+    );
 
     # the HTML markup would be stripped out if RichText is disabled
     $SeleniumObject->PageContains(
