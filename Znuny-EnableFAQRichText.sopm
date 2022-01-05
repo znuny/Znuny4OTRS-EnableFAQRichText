@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
     <Name>Znuny-EnableFAQRichText</Name>
-    <Version>6.0.5</Version>
+    <Version>6.1.1</Version>
+    <ChangeLog Version="6.1.1" Date="2022-01-05 13:55:33 +0100">Initial release for Znuny 6.1.</ChangeLog>
     <ChangeLog Version="6.0.5" Date="2021-07-16 12:30:15 +0200">Fixed #1 - Selenium-Test.&#13;
 Happy new year. Tidied code.</ChangeLog>
     <ChangeLog Version="6.0.4" Date="2018-08-05 18:21:51 +0200">Added Public Interface compatibility.</ChangeLog>
@@ -64,5 +65,5 @@ Diese Erweiterung aktiviert Richtext für die FAQ, auch wenn Richtext per SysCon
         <br/>
         <br/>
     ]]></IntroInstall>
-    <PackageMerge Name="Znuny4OTRS-EnableFAQRichText" TargetVersion="6.0.5"></PackageMerge>
+    <PackageMerge Name="Znuny4OTRS-EnableFAQRichText" TargetVersion="6.0.5"/>
 </otrs_package>
