@@ -1,38 +1,35 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
 
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-EnableFAQRichText/master)
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-EnableFAQRichText/rel-6_1)
 
-Znuny4OTRS - EnableFAQRichText
-==============================
-This package enables richtext for FAQ even if richtext is disabled in OTRS.
-
-
-**Installation**
-
-Download the package and install it via admin interface -> package manager or use Znuny4OTRS-Repo.
-
+Znuny-EnableFAQRichText
+=======================
+This package enables richtext for FAQ even if richtext is disabled in Znuny.
 
 **Prerequisites**
 
-- Znuny4OTRS-Repo
+- Znuny 6.1
+- FAQ 6.1.1 or newer
 
-- OTRS 6
+**Installation**
+
+Download the [package](https://addons.znuny.com/api/addon_repos/public/2120/latest) and install it via admin interface -> package manager.
 
 **Configuration**
 
-Enabling and disabling the FAQs richtext is possible via SysConfig.
+Enabling and disabling richtext for FAQ is possible via SysConfig.
 
 **Download**
 
-For download see [https://www.znuny.com/en/#!/addons](https://www.znuny.com/en/#!/addons)
+Download the [latest version](https://addons.znuny.com/api/addon_repos/public/2120/latest).
 
-**Commercial Support**
+**Professional Support**
 
-For this extension and for OTRS in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
+For this add-on and for Znuny in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
 
 Enjoy!
 
 Your Znuny Team!
 
-[www.znuny.com](https://www.znuny.com)
+[https://www.znuny.com](https://www.znuny.com)

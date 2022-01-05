@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <otrs_package version="1.0">
-    <Name>Znuny4OTRS-EnableFAQRichText</Name>
+    <Name>Znuny-EnableFAQRichText</Name>
     <Version>6.0.5</Version>
     <ChangeLog Version="6.0.5" Date="2021-07-16 12:30:15 +0200">Fixed #1 - Selenium-Test.&#13;
 Happy new year. Tidied code.</ChangeLog>
@@ -9,31 +9,30 @@ Happy new year. Tidied code.</ChangeLog>
     <ChangeLog Version="6.0.2" Date="2017-12-14 10:33:11 +0100">Added note about SysConfig option.</ChangeLog>
     <ChangeLog Version="6.0.1" Date="2017-11-14 14:05:38 +0100">Initial release 6.0.x.</ChangeLog>
     <ChangeLog Version="1.2.0" Date="2015-12-03 11:00:40 UTC">Ported to OTRS 5.0.</ChangeLog>
-    <Framework>6.0.x</Framework>
-    <PackageRequired Version="6.0.76">Znuny4OTRS-Repo</PackageRequired>
-    <PackageRequired Version="6.0.29">FAQ</PackageRequired>
+    <Framework>6.1.x</Framework>
+    <PackageRequired Version="6.1.1">FAQ</PackageRequired>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Description Lang="en">This extention enables rich text for FAQ even if rich text is disabled via SysConfig.</Description>
     <Description Lang="de">Diese Erweiterung aktiviert RichText für die FAQ, auch wenn RichText über SysConfig deaktiviert wurde.</Description>
     <Filelist>
-        <File Permission="660" Location="Kernel/Autoload/Znuny4OTRSEnableFAQRichText.pm"/>
-        <File Permission="660" Location="Kernel/Config/Files/XML/Znuny4OTRSEnableFAQRichText.xml"/>
-        <File Permission="660" Location="Kernel/Language/de_Znuny4OTRSEnableFAQRichText.pm"/>
-        <File Permission="660" Location="Kernel/Modules/PreApplicationZnuny4OTRSEnableFAQRichText.pm"/>
-        <File Permission="660" Location="scripts/test/Znuny4OTRSEnableFAQRichText/Selenium/Agent.t"/>
-        <File Permission="660" Location="scripts/test/Znuny4OTRSEnableFAQRichText/Selenium/Customer.t"/>
-        <File Permission="660" Location="scripts/test/Znuny4OTRSEnableFAQRichText/Selenium/Public.t"/>
+        <File Permission="660" Location="Kernel/Autoload/ZnunyEnableFAQRichText.pm"/>
+        <File Permission="660" Location="Kernel/Config/Files/XML/ZnunyEnableFAQRichText.xml"/>
+        <File Permission="660" Location="Kernel/Language/de_ZnunyEnableFAQRichText.pm"/>
+        <File Permission="660" Location="Kernel/Modules/PreApplicationZnunyEnableFAQRichText.pm"/>
+        <File Permission="660" Location="scripts/test/ZnunyEnableFAQRichText/Selenium/Agent.t"/>
+        <File Permission="660" Location="scripts/test/ZnunyEnableFAQRichText/Selenium/Customer.t"/>
+        <File Permission="660" Location="scripts/test/ZnunyEnableFAQRichText/Selenium/Public.t"/>
     </Filelist>
     <IntroInstall Type="pre" Title="Pre-Install Information" Lang="en"><![CDATA[
         <br/>
         <br/>
-        Welcome to <u>Znuny4OTRS-EnableFAQRichText</u>!
+        Welcome to <u>Znuny-EnableFAQRichText</u>!
         <br/>
         <br/>
         <p>
-This extention enables rich text for FAQ even if rich text is disabled via SysConfig.
+This extention enables richtext for FAQ even if richtext is disabled via SysConfig.
         </p>
         <br/>
         <br/>
@@ -48,12 +47,12 @@ This extention enables rich text for FAQ even if rich text is disabled via SysCo
     <IntroInstall Type="pre" Title="Installation Information" Lang="de"><![CDATA[
         <br/>
         <br/>
-        Herzlich Willkommen zu <u>Znuny4OTRS-EnableFAQRichText</u>!
+        Herzlich Willkommen zu <u>Znuny-EnableFAQRichText</u>!
 
         <br/>
         <br/>
         <p>
-Diese Erweiterung aktiviert RichText für die FAQ, auch wenn RichText über SysConfig deaktiviert wurde.
+Diese Erweiterung aktiviert Richtext für die FAQ, auch wenn Richtext per SysConfig deaktiviert wurde.
         </p>
         <br/>
         <br/>
@@ -65,4 +64,5 @@ Diese Erweiterung aktiviert RichText für die FAQ, auch wenn RichText über SysC
         <br/>
         <br/>
     ]]></IntroInstall>
+    <PackageMerge Name="Znuny4OTRS-EnableFAQRichText" TargetVersion="6.0.5"></PackageMerge>
 </otrs_package>
