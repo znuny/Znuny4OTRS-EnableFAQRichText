@@ -12,8 +12,8 @@ Happy new year. Tidied code.</ChangeLog>
     <ChangeLog Version="6.0.2" Date="2017-12-14 10:33:11 +0100">Added note about SysConfig option.</ChangeLog>
     <ChangeLog Version="6.0.1" Date="2017-11-14 14:05:38 +0100">Initial release 6.0.x.</ChangeLog>
     <ChangeLog Version="1.2.0" Date="2015-12-03 11:00:40 UTC">Ported to OTRS 5.0.</ChangeLog>
-    <Framework>6.3.x</Framework>
-    <PackageRequired Version="6.3.1">FAQ</PackageRequired>
+    <Framework>6.4.x</Framework>
+    <PackageRequired Version="6.4.1">FAQ</PackageRequired>
     <Vendor>Znuny GmbH</Vendor>
     <URL>http://znuny.com/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
