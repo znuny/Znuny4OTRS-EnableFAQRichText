@@ -10,6 +10,7 @@ package Kernel::Modules::PreApplicationZnunyEnableFAQRichText;
 
 use strict;
 use warnings;
+use utf8;
 
 our @ObjectDependencies = (
     'Kernel::Config',
