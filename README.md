@@ -1,7 +1,7 @@
 ![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
 
 
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-EnableFAQRichText/rel-7_0)
+![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-EnableFAQRichText/rel-7_1)
 
 Znuny-EnableFAQRichText
 =======================
@@ -9,24 +9,21 @@ This package enables richtext for FAQ even if richtext is disabled in Znuny.
 
 **Prerequisites**
 
-- Znuny 7.0
-- FAQ 7.0.x
+- Znuny 7.1
+- FAQ 7.1
 
 **Installation**
 
-Install it via the online repository or download the [package](https://addons.znuny.com/api/addon_repos/public/3055/latest) and install it via admin interface -> package manager.
+Use the online repository **Znuny Open Source Add-ons** from the package manager to install the add-on. From the command line use this command: `bin/znuny.Console.pl Admin::Package::Install  https://addons.znuny.com/public/:Znuny-EnableFAQRichText`
 
 **Configuration**
 
 Enabling and disabling richtext for FAQ is possible via SysConfig.
 
-**Download**
+**Commercial Support**
 
-Download the [latest version](https://addons.znuny.com/api/addon_repos/public/3055/latest).
+For this add-on and for Znuny in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you.
 
-**Professional Support**
-
-For this add-on and for Znuny in general visit [www.znuny.com](https://www.znuny.com). Looking forward to hear from you!
 
 Your Znuny Team!
 

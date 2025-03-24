@@ -17,8 +17,6 @@ our @ObjectDependencies = (
     'Kernel::Output::HTML::Layout',
 );
 
-use Kernel::System::VariableCheck qw(:all);
-
 sub new {
     my ( $Type, %Param ) = @_;
 
