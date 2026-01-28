@@ -1,7 +1,11 @@
-![Znuny logo](https://www.znuny.com/assets/images/logo_small.png)
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://www.znuny.com/assets/znuny-logo.svg">
+    <img alt="Znuny" src="https://www.znuny.com/assets/znuny-logo-black.svg" width="300">
+  </picture>
 
-
-![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-EnableFAQRichText/rel-7_1)
+  ![Build status](https://badge.proxy.znuny.com/Znuny4OTRS-EnableFAQRichText/rel-7_3)
+</div>
 
 Znuny-EnableFAQRichText
 =======================
@@ -9,8 +13,8 @@ This package enables richtext for FAQ even if richtext is disabled in Znuny.
 
 **Prerequisites**
 
-- Znuny 7.1
-- FAQ 7.1
+- Znuny 7.3
+- FAQ 7.3
 
 **Installation**
 
